@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <base href="/">
+    <link rel="shortcut icon" media="(prefers-color-scheme: light)" href="assets/logo__color--dark.svg">
+    <link rel="shortcut icon" media="(prefers-color-scheme: dark)" href="assets/logo__color--light.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap" rel="stylesheet">
+    <title>JOKA | (Web)developer</title>
+</head>
+<body>
+<div id="wrapper" class="flex flex-col w-full h-screen text-brand-900 bg-brand-900 dark:text-brand-100 dark:bg-black p-4 font-cousine">
+    <nav id="nav" class="flex">
+        <div id="nav__container" class="flex">
+        </div>
+    </nav>
+    <main class="flex flex-1">
+        <div class="flex flex-col flex-1 justify-center items-center">
+            <h1 class="text-3xl">JOKA | Josef Katič</h1>
+            <hr class="w-1/4 m-2 border-brand-900 dark:border-brand-100 border-2 rounded-full"/>
+            <h2 class="text-xl">Fullstack developer with primary focus on web</h2>
+        </div>
+    </main>
+    <footer class="flex">
+        <div id="footer__container" class="flex justify-between flex-1">
+            <div id="nav__logo" class="w-6 h-6 aspect-square">
+<!--                <img src="" alt="">-->
+                <picture>
+                    <source media="(prefers-color-scheme: dark)" srcset="assets/logo__color--light.svg">
+                    <img src="assets/logo__dark.svg" alt="Logo">
+                </picture>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
