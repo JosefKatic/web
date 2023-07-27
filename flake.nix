@@ -29,12 +29,15 @@
             cp -r ./src/assets ./public/
           '';
           installPhase = ''
-            mkdir -p $out/public
-            cp -r ./public/* $out/public
+            mkdir -p $out
+            cp -r public -T $out/public
           '';
         };
       in with pkgs; {
-        defaultPackage = appBuild;
+        packages = rec { 
+          default = appBuild;
+          main = default;
+        };
         devShell = mkShell { 
           buildInputs = [ 
             nodejs
